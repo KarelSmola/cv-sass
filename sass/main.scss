@@ -7,8 +7,4 @@
 @import "./base/typography";
 @import "./base/utilities";
 
-@import "./pages/home";
-
-.main-heading {
-  color: $color-primary;
-}
+@import "./sections/hero";
