@@ -1,10 +1,9 @@
-.stack {
+.skills {
   display: grid;
   justify-content: center;
   align-content: center;
   justify-items: center;
   row-gap: 4rem;
-  // padding: 2rem;
   color: $color-first;
   height: 90vh;
   background-color: $color-first;
@@ -21,23 +20,13 @@
 
   &__content-box {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     text-align: center;
     column-gap: 2rem;
     color: $color-light;
   }
 
-  &__item-box {
-    display: grid;
-    row-gap: 1rem;
-  }
-
   &__content-item {
     font-size: 2rem;
   }
-}
-
-.stack__content-icon {
-  font-size: 5rem;
 }

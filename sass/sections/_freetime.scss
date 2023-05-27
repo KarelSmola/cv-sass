@@ -1,10 +1,9 @@
-.stack {
+.freetime {
   display: grid;
   justify-content: center;
   align-content: center;
   justify-items: center;
   row-gap: 4rem;
-  // padding: 2rem;
   color: $color-first;
   height: 90vh;
   background-color: $color-first;
@@ -38,6 +37,6 @@
   }
 }
 
-.stack__content-icon {
+.freetime__content-icon {
   font-size: 5rem;
 }
