@@ -20,19 +20,52 @@
 
   &__content-box {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    text-align: center;
     column-gap: 2rem;
     row-gap: 3rem;
+    width: 100rem;
+    height: 30rem;
+    text-align: center;
+
     color: $color-light;
   }
 
   &__company-box {
     display: grid;
+    justify-items: center;
+    align-items: center;
     row-gap: 1rem;
+    width: 100%;
+
+    perspective: 150rem;
+    position: relative;
   }
 
-  &__company-title-box {
+  &__company-card {
+    transition: all 0.5s ease;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $color-second;
+
+    &--front {
+      display: grid;
+      row-gap: 1rem;
+    }
+
+    &--back {
+      transform: rotateY(-180deg);
+    }
+  }
+
+  &__company-box:hover &__company-card--front {
+    transform: rotateY(180deg);
+  }
+
+  &__company-box:hover &__company-card--back {
+    transform: rotateY(0deg);
   }
 
   &__company-title {
