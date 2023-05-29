@@ -35,11 +35,12 @@ html {
     width: 30rem;
     height: 30rem;
     border-radius: 50%; }
-  .about__content-box {
+  .about__content-list {
     display: grid;
     justify-items: center;
     row-gap: 1rem;
-    color: #fff; }
+    color: #fff;
+    list-style: none; }
   .about__title {
     font-size: 4rem;
     color: #fff;
@@ -151,7 +152,7 @@ html {
     background-color: #fdb44b; }
   .freetime__content-box {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     text-align: center;
     column-gap: 2rem;
@@ -203,7 +204,7 @@ html {
     justify-items: center;
     align-items: center;
     row-gap: 1rem;
-    width: 100%;
+    width: 90%;
     perspective: 150rem;
     position: relative; }
   .job__company-card {
@@ -212,16 +213,27 @@ html {
     backface-visibility: hidden;
     width: 100%;
     height: 100%;
+    padding: 1rem;
     border: 1px solid #005792; }
     .job__company-card--front {
       display: grid;
-      row-gap: 1rem; }
+      row-gap: 1rem;
+      position: relative; }
     .job__company-card--back {
+      display: grid;
+      row-gap: 0.5rem;
+      align-items: center;
       transform: rotateY(-180deg); }
   .job__company-box:hover .job__company-card--front {
     transform: rotateY(180deg); }
   .job__company-box:hover .job__company-card--back {
     transform: rotateY(0deg); }
+  .job__rotate-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: #005792; }
   .job__company-title {
     font-size: 3rem; }
   .job__company-time {
@@ -232,19 +244,19 @@ html {
     display: grid;
     row-gap: 0.5rem; }
   .job__company-position-skills {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    text-decoration: underline;
     letter-spacing: 0.1rem; }
   .job__company-position-list {
-    list-style: none;
     display: grid;
     justify-items: center;
-    row-gap: 0.5rem; }
+    align-items: center;
+    row-gap: 0.5rem;
+    list-style: none; }
   .job__company-position-item {
     font-size: 1.6rem;
     position: relative; }
-  .job__company-position-item::after {
+  .job__company-position-item::before {
     content: "";
     position: absolute;
     left: -1rem;

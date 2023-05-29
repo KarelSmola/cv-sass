@@ -25,11 +25,12 @@
     border-radius: 50%;
   }
 
-  &__content-box {
+  &__content-list {
     display: grid;
     justify-items: center;
     row-gap: 1rem;
     color: $color-light;
+    list-style: none;
   }
 
   &__title {
