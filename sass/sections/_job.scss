@@ -1,14 +1,5 @@
 .job {
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  row-gap: 4rem;
-  color: $color-first;
-  min-height: 90vh;
-  background-color: $color-first;
-  clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
-  margin-top: -10rem;
+  @include sectionWrapper;
 
   &__title {
     @include sectionTitle;
@@ -19,15 +10,10 @@
   }
 
   &__content-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    column-gap: 2rem;
+    @include contentBox(2);
     row-gap: 3rem;
     width: 100rem;
     height: 30rem;
-    text-align: center;
-    color: $color-light;
   }
 
   &__company-box {

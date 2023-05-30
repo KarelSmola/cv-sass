@@ -22,32 +22,40 @@
   <body>
     <main>
       <section class="about">
-        <figure class="about__picture-box">
-          <img src="img/Karel_Smola.jpg" class="about__picture" />
-        </figure>
-        <h1 class="about__title">Karel Smola</h1>
-        <ul class="about__content-list">
-          <li class="about__content-item">Prague</li>
-          <li class="about__content-item">21. 11. 1984</li>
-          <li class="about__content-item">karelsmola21@gmail.com</li>
-          <li class="about__content-item">+420 776 709 339</li>
-          <li>
-            <a
-              class="about__content-item"
-              href="https://github.com/KarelSmola"
-              target="_blank"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <a
-              class="about__content-item"
-              href="https://www.linkedin.com/in/karel-smola-98400312a/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
+        <div class="about__title-box">
+          <figure class="about__picture-box">
+            <img src="img/Karel_Smola.jpg" class="about__picture" />
+          </figure>
+          <h1 class="about__title">Karel Smola</h1>
+        </div>
+        <div class="about__content-box">
+          <ul class="about__content-list">
+            <li class="about__content-item">Prague</li>
+            <li class="about__content-item">21. 11. 1984</li>
+            <li class="about__content-item">
+              <a href="mailto:karelsmola21@gmail.com">
+                karelsmola21@gmail.com
+              </a>
+            </li>
+            <li class="about__content-item">
+              <a href="tel:+420776709339"> +420 776 709 339 </a>
+            </li>
+          </ul>
+          <div class="about__content-links">
+            <div class="about__content-item about__content-item--box">
+              <i class="about__content-icon fa-brands fa-github"></i>
+              <a href="https://github.com/KarelSmola" target="_blank">GitHub</a>
+            </div>
+            <div class="about__content-item about__content-item--box">
+              <i class="about__content-icon fa-brands fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/karel-smola-98400312a/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
       </section>
       <section class="stack">
         <h1 class="stack__title">Stack</h1>
@@ -118,8 +126,10 @@
         <div class="job__content-box">
           <div class="job__company-box">
             <div class="job__company-card job__company-card--front">
-              <h2 class="job__company-title">MTT printing house</h2>
-              <p class="job__company-time">2000 - 2005</p>
+              <div>
+                <h2 class="job__company-title">MTT printing house s. r. o.</h2>
+                <p class="job__company-time">2000 - 2005</p>
+              </div>
               <p class="job__company-position">Graphic designer</p>
               <i class="job__rotate-icon fa-solid fa-rotate-right"></i>
             </div>
@@ -140,8 +150,10 @@
 
           <div class="job__company-box">
             <div class="job__company-card job__company-card--front">
-              <h2 class="job__company-title">Panflex</h2>
-              <p class="job__company-time">2005 - 2006</p>
+              <div>
+                <h2 class="job__company-title">Panflex s. r. o.</h2>
+                <p class="job__company-time">2005 - 2006</p>
+              </div>
               <p class="job__company-position">DTP operator</p>
               <i class="job__rotate-icon fa-solid fa-rotate-right"></i>
             </div>
@@ -163,8 +175,10 @@
 
           <div class="job__company-box">
             <div class="job__company-card job__company-card--front">
-              <h2 class="job__company-title">Panflex</h2>
-              <p class="job__company-time">2006 - 2020</p>
+              <div>
+                <h2 class="job__company-title">Panflex s. r. o.</h2>
+                <p class="job__company-time">2006 - 2020</p>
+              </div>
               <p class="job__company-position">Technical Support Specialist</p>
               <i class="job__rotate-icon fa-solid fa-rotate-right"></i>
             </div>
@@ -187,8 +201,10 @@
 
           <div class="job__company-box">
             <div class="job__company-card job__company-card--front">
-              <h2 class="job__company-title">Panflex</h2>
-              <p class="job__company-time">2020 - now</p>
+              <div>
+                <h2 class="job__company-title">Panflex s. r. o.</h2>
+                <p class="job__company-time">2020 - now</p>
+              </div>
               <p class="job__company-position">Technician</p>
               <i class="job__rotate-icon fa-solid fa-rotate-right"></i>
             </div>
@@ -206,6 +222,7 @@
                 <li class="job__company-position-item">
                   ESKO software (Automation Engine, ArtPro+)
                 </li>
+                <li class="job__company-position-item">JS scripts</li>
               </ul>
             </div>
           </div>

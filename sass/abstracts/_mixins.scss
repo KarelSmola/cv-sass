@@ -1,7 +1,19 @@
+@mixin sectionWrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  row-gap: 4rem;
+  color: $color-first;
+  height: 90vh;
+  background-color: $color-first;
+  clip-path: polygon(0% 25%, 100% 0%, 100% 75%, 0% 100%);
+  margin-top: -10rem;
+}
+
 @mixin sectionTitle {
   font-size: 4rem;
   color: $color-light;
-  // margin-bottom: 2rem;
   position: relative;
 }
 
@@ -13,4 +25,13 @@
   bottom: 0;
   left: 0;
   background-color: $color-fourth;
+}
+
+@mixin contentBox($nrColumns) {
+  display: grid;
+  grid-template-columns: repeat($nrColumns, 1fr);
+  justify-items: center;
+  text-align: center;
+  column-gap: 2rem;
+  color: $color-light;
 }
