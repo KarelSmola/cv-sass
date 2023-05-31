@@ -10,10 +10,23 @@
   }
 
   &__content-box {
-    @include contentBox(1);
+    @include contentBox(4);
+
+    @media only screen and (max-width: 60em) {
+      @include contentBox(2);
+    }
+  }
+
+  &__item-box {
+    display: grid;
+    row-gap: 1rem;
   }
 
   &__content-item {
     font-size: 2rem;
+  }
+
+  &__content-icon {
+    font-size: 5rem;
   }
 }

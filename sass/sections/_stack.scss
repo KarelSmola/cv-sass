@@ -11,6 +11,10 @@
 
   &__content-box {
     @include contentBox(6);
+
+    @media only screen and (max-width: 60em) {
+      @include contentBox(3);
+    }
   }
 
   &__item-box {
@@ -21,8 +25,8 @@
   &__content-item {
     font-size: 2rem;
   }
-}
 
-.stack__content-icon {
-  font-size: 5rem;
+  &__content-icon {
+    font-size: 5rem;
+  }
 }
