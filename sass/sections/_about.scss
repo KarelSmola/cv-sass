@@ -43,9 +43,8 @@
   }
 
   &__content-box {
-    display: grid;
-    justify-items: center;
-    row-gap: 2rem;
+    @include contentBox(1);
+    gap: 2rem;
   }
 
   &__content-list {
@@ -85,7 +84,7 @@
   }
 
   &__content-icon {
-    font-size: 3rem;
+    font-size: 5rem;
     color: $color-light;
   }
 }

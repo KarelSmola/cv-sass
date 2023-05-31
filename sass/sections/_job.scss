@@ -73,7 +73,7 @@
       display: grid;
       row-gap: 1rem;
       position: relative;
-      padding: 2em;
+      padding: 2rem;
     }
 
     &--back {
@@ -108,6 +108,7 @@
 
   &__company-time {
     font-size: 2rem;
+    font-weight: 300;
   }
 
   &__company-position {

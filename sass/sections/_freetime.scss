@@ -17,22 +17,13 @@
     }
   }
 
-  &__item-box {
-    display: grid;
-    row-gap: 1rem;
+  @include contentBoxItemIcon;
 
+  &__item-box {
     @media only screen and (max-width: 45em) {
       &:last-child {
         grid-column: span 2;
       }
     }
   }
-
-  &__content-item {
-    font-size: 2rem;
-  }
-}
-
-.freetime__content-icon {
-  font-size: 5rem;
 }

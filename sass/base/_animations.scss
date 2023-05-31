@@ -1,0 +1,15 @@
+@keyframes showSection {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: showSection 1s ease-out;
+}

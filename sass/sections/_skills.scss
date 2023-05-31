@@ -17,16 +17,5 @@
     }
   }
 
-  &__item-box {
-    display: grid;
-    row-gap: 1rem;
-  }
-
-  &__content-item {
-    font-size: 2rem;
-  }
-
-  &__content-icon {
-    font-size: 5rem;
-  }
+  @include contentBoxItemIcon;
 }

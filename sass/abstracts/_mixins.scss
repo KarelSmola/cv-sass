@@ -40,3 +40,18 @@
   text-align: center;
   color: $color-light;
 }
+
+@mixin contentBoxItemIcon {
+  &__item-box {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  &__content-item {
+    font-size: 2rem;
+  }
+
+  &__content-icon {
+    font-size: 5rem;
+  }
+}
